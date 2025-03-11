@@ -227,7 +227,7 @@ function ConstraintDropdown({
                 {[
                     [null, "🤷 maybe・任意"],
                     [false, "❌ must not・不要"],
-                    [true, "✅ must・必要"],
+                    [null, "✅ must・必要"],
                 ].map(([v, label]) => {
                     return (
                         <option
