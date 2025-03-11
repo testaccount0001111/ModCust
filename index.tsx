@@ -244,46 +244,6 @@ function ConstraintDropdown({
     );
 }
 
-function ConstraintDropdown2({
-    title,
-    value,
-    onChange,
-    disabled = false,
-}: {
-    title: string;
-    value: boolean | null;
-    onChange: (value: boolean | null) => void;
-    disabled?: boolean;
-}) {
-    return (
-        <div className="form-floating">
-            <select
-                disabled={disabled}
-                value={JSON.stringify(value)}
-                className="form-select"
-                onChange={(e) => {
-                    onChange(JSON.parse(e.target.value));
-                }}
-            >
-                {[
-                    [null, "🤷 maybe・任意"],
-                    [null, "✅ must・必要"],
-                ].map(([v, label]) => {
-                    return (
-                        <option
-                            value={JSON.stringify(v)}
-                            key={JSON.stringify(v)}
-                        >
-                            {label}
-                        </option>
-                    );
-                })}
-            </select>
-            <label>{title}</label>
-        </div>
-    );
-}
-
 function PartSelector({
     data,
     problem,
@@ -543,7 +503,7 @@ function PartSelector({
                                         </div>
                                     </div>
                                     <div className="col-xl">
-                                        <ConstraintDropdown2
+                                        <ConstraintDropdown
                                             value={
                                                 requirement.constraint
                                                     .compressed
