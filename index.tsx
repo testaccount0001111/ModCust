@@ -266,6 +266,7 @@ function ConstraintDropdown2({
                 }}
             >
                 {[
+                    [null, "🤷 maybe・任意"],
                     [null, "✅ must・必要"],
                 ].map(([v, label]) => {
                     return (
