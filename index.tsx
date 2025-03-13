@@ -1149,7 +1149,7 @@ function App() {
                 <ul id="games-nav" className="nav nav-pills mb-2">
                     {[
                         ["bn6", "bn6・exe6"],
-                        ["bn3", "bn3・exe4"],
+                        ["bn3", "bn3・exe3"],
                     ].map(([key, label]) => (
                         <li className="nav-item" key={key}>
                             <a
