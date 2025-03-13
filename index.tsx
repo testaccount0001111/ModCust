@@ -512,8 +512,7 @@ function PartSelector({
                                             disabled=={isEqual(
                                                 partMeta.compressedMask,
                                                 partMeta.uncompressedMask
-                                            )
-                                            }
+                                            )}
                                             onChange={((
                                                 i: number,
                                                 v: boolean | null
