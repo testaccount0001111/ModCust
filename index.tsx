@@ -509,7 +509,7 @@ function PartSelector({
                                                     .compressed
                                             }
                                             title="compress・圧縮"
-                                            disabled==false
+                                            disabled==true
                                             }
                                             onChange={((
                                                 i: number,
