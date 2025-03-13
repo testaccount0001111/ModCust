@@ -509,7 +509,10 @@ function PartSelector({
                                                     .compressed
                                             }
                                             title="compress・圧縮"
-                                            disabled==true
+                                            disabled=={isEqual(
+                                                partMeta.compressedMask,
+                                                partMeta.uncompressedMask
+                                            )
                                             }
                                             onChange={((
                                                 i: number,
