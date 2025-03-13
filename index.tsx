@@ -142,7 +142,7 @@ function fromHashString(s: string): Problem | null {
                 onCommandLine: cr.c === 1 ? true : cr.c === 0 ? false : null,
                 maxBugLevel: cr.b === -1 ? Infinity : cr.b,
                 minBugLevel: cr.d,
-                compressed: cr.z === 0 ? true : cr.z === 1 ? false : null,
+                compressed: cr.z === 1 ? true : cr.z === 0 ? false : null,
             },
         })),
         spinnableColors: j.s.map((v) => !!v),
@@ -509,10 +509,8 @@ function PartSelector({
                                                     .compressed
                                             }
                                             title="compress・圧縮"
-                                            disabled={isEqual(
-                                                partMeta.compressedMask,
-                                                partMeta.uncompressedMask
-                                            )}
+                                            disabled==false
+                                            }
                                             onChange={((
                                                 i: number,
                                                 v: boolean | null
