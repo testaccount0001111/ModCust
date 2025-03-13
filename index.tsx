@@ -509,7 +509,7 @@ function PartSelector({
                                                     .compressed
                                             }
                                             title="compress・圧縮"
-                                            disabled=={isEqual(
+                                            disabled={isEqual(
                                                 partMeta.compressedMask,
                                                 partMeta.uncompressedMask
                                             )}
@@ -1149,7 +1149,7 @@ function App() {
                 <ul id="games-nav" className="nav nav-pills mb-2">
                     {[
                         ["bn6", "LDR"],
-                        ["bn3", "bbbn3"],
+                        ["bn4", "bbbn3"],
                     ].map(([key, label]) => (
                         <li className="nav-item" key={key}>
                             <a
@@ -1190,3 +1190,4 @@ function App() {
 }
 
 createRoot(document.getElementById("main")!).render(<App />);
+
