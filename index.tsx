@@ -1141,7 +1141,7 @@ function App() {
                 style={{ width: "40%", top: 0 }}
             >
                 <h1 className="h4">
-                    fullcust{" "}
+                    BNModcust{" "}
                     <small className="text-muted">
                         navicust autolayout・ナビカスタマイザー自動配置 <br /> * Need to change “must” in compress to "maybe"
                     </small>
