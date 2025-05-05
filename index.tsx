@@ -1143,7 +1143,7 @@ function App() {
                 <h1 className="h4">
                     BNModcust{" "}
                     <small className="text-muted">
-                        navicust autolayout・ナビカスタマイザー自動配置 <br /> * Need to change “must” in compress to "maybe"
+                        navicust autolayout・ナビカスタマイザー自動配置 <br /> * Need to change “must” in compress to "maybe"(in LDR)
                     </small>
                 </h1>
                 <ul id="games-nav" className="nav nav-pills mb-2">
